@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    brat:
+        container_name: brat
+        restart: always
+        build: ./
+        volumes:
+            - './brat-data:/bratdata'
+            - './brat-cfg:/bratcfg'
+        ports:
+            - 80:80
+        environment:
+            - BRAT_USERNAME
+            - BRAT_PASSWORD
+            - BRAT_EMAIL
