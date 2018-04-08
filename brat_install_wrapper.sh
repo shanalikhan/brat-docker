@@ -5,7 +5,7 @@ $BRAT_USERNAME
 $BRAT_PASSWORD 
 $BRAT_EMAIL
 EOD
-echo "import json; USER_PASSWORD.update(json.load(open('cfg/users.json', 'r'))" >> /var/www/brat/brat-v1.3_Crunchy_Frog/config.py
+echo "import json; USER_PASSWORD.update(json.load(open('cfg/users.json', 'r')))" >> /var/www/brat/brat-v1.3_Crunchy_Frog/config.py
 
 chown -R www-data:www-data /bratdata
 
