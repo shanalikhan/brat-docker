@@ -38,9 +38,6 @@ RUN chown -R www-data:www-data /var/www/brat/brat-v1.3_Crunchy_Frog/
 
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
 
-# add the user patching script
-ADD config_template.py /var/www/brat/brat-v1.3_Crunchy_Frog/config.py
-
 # Enable cgi
 RUN a2enmod cgi
 
